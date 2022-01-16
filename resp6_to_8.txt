@@ -1,0 +1,19 @@
+6. O log indica que a variável de ambiente WALLET_X_TOKEN_MAX_AGE não está configurada no devido ambiente.
+A solução seria setar esssa variavel no modulo core.settings
+
+7. 
+    Pontos a alterar:
+        1. O código não está adequado às boas práticas da PEP8, os imports deve ser colocados 
+        de forma corretae as funções deves estar separadas por duas linhas.
+
+        2. Na linha 15 a connection string do banco de dados está setada hard coded no código,
+        isso é uma brecha de segurança, pois qualquer usuário com essa string pode acessar o banco
+        e efetuar modificações, o ideal seria colocar essa e outras informações sensíveis em variáveis
+        de ambiente de modo que o programa pegasse esse valor em tempo de execução, evitando que esses dados
+        sejamm expostos publicamente
+
+
+8. Eu utilizaria o padrão de projeto Template Method, onde eu definiria uma classe abstrata que representasse
+uma interface para os fornecedores. Assim, para cada fornecedor que houver a necessidade de adicionar um fornecedor 
+ao sistema, cada um implementa os seus próprios metodos de acordo com as suas particularidades, sem que afete aos outros
+fornecedores, reduzindo o nível e acoplamento do projeto.
