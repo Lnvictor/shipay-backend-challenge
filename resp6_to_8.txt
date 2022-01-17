@@ -6,7 +6,7 @@ A solução seria setar esssa variavel no modulo core.settings
         1. O código não está adequado às boas práticas da PEP8, os imports deve ser colocados 
         de forma correta as funções deves estar separadas por duas linhas.
 
-        2. Na linha 15 a connection string do banco de dados está setada hard coded no código,
+        2. Na linha 19 a connection string do banco de dados está setada hard coded no código,
         isso é uma brecha de segurança, pois qualquer usuário com essa string pode acessar o banco
         e efetuar modificações, o ideal seria colocar essa e outras informações sensíveis em variáveis
         de ambiente de modo que o programa pegasse esse valor em tempo de execução, evitando que esses dados

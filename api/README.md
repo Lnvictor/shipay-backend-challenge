@@ -25,6 +25,12 @@ para isso, primeiro temos que instalar as dependencias:
 pip install -r requirements.txt
 ```
 
+Então, devemos criar um arquivo .env na raiz do nosso projeto. Nele estará as veriáveis de ambiente necessárias ao projeto, você deverá setar a variável DATABASE_URL nesse aquivo como a connection string para acessar o nosso banco de dados.
+
+```.env
+DATABASE_URL=postgresql://usr:pass@localhost:5432/postgres
+```
+
 Depois disso, podemos rodar nossa API:
 
 ```console

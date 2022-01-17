@@ -9,7 +9,7 @@ from .models import User
 app = Flask(__name__)
 
 
-@app.route("/user/<int:id>", methods=["POST", "GET"])
+@app.route("/user/<int:id>", methods=["GET"])
 def index(id):
     data = get_user_info(Session, id)
     resp = [
