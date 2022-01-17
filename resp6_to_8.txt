@@ -14,6 +14,6 @@ A solução seria setar esssa variavel no modulo core.settings
 
 
 8. Eu utilizaria o padrão de projeto Template Method, onde eu definiria uma classe abstrata que representasse
-uma interface para os fornecedores. Assim, para cada fornecedor que houver a necessidade de adicionar um fornecedor 
-ao sistema, cada um implementa os seus próprios metodos de acordo com as suas particularidades, sem que afete aos outros
-fornecedores, reduzindo o nível e acoplamento do projeto.
+uma interface para os fornecedores. Assim, quando houver a necessidade de adicionar um fornecedor 
+ao sistema, cada um implementa os seus próprios metodos de acordo com as suas particularidades, sem que afete aos outros, 
+reduzindo o nível e acoplamento do projeto.
